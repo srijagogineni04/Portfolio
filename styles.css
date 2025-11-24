@@ -469,6 +469,21 @@ body {
     box-shadow: var(--shadow-md);
 }
 
+.publication-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.publication-link:hover {
+    border-color: var(--accent-primary);
+}
+
+.publication-link:hover .publication-number {
+    box-shadow: var(--shadow-md);
+    transform: scale(1.05);
+}
+
 .publication-number {
     flex-shrink: 0;
     width: 50px;
