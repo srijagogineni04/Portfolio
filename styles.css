@@ -133,7 +133,6 @@ body {
 }
 
 .hero-content {
-    max-width: 800px;
     animation: fadeInUp 1s ease;
 }
 
@@ -742,6 +741,10 @@ body {
     .hero-wrapper {
         grid-template-columns: 1fr;
         gap: 3rem;
+    }
+
+    .hero-image-container {
+        order: -1;
     }
 
     .hero-image-wrapper {
