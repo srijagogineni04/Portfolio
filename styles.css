@@ -516,9 +516,112 @@ body {
     color: var(--text-tertiary);
 }
 
+/* ===== Blog Section ===== */
+.blog {
+    background-color: var(--bg-secondary);
+}
+
+.blog-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.blog-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.blog-role {
+    margin-bottom: 0.5rem;
+}
+
+.role-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--accent-gradient);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.blog-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.blog-text p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.blog-text strong {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.blog-cta {
+    margin-top: 1rem;
+}
+
+.blog-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-logo-wrapper {
+    background-color: var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-logo-wrapper:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--accent-primary);
+}
+
+.blog-logo {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .blog-main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .blog-logo {
+        max-width: 200px;
+    }
+}
+
 /* ===== Contact Section ===== */
 .contact {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
 }
 
 .contact-content {
@@ -569,6 +672,7 @@ body {
 .footer {
     padding: 2rem 0;
     text-align: center;
+    background-color: var(--bg-secondary);
     border-top: 1px solid var(--border-color);
     color: var(--text-secondary);
     font-size: 0.9rem;
